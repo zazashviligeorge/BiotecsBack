@@ -20,7 +20,7 @@ namespace BiotecsBack.Controllers
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
-    //new comment
+    //new comment 2
     public class ProductController : ControllerBase
     {
         private readonly IProductService _productService;
