@@ -20,6 +20,8 @@ namespace BiotecsBack.Controllers
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
+
+    //rame cvlileba
     public class ProductController : ControllerBase
     {
         private readonly IProductService _productService;
