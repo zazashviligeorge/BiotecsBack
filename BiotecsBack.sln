@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiotecsBack", "BiotecsBack\BiotecsBack.csproj", "{F43F9754-0924-4B13-B95C-5552C06C7419}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{C2809D53-76DE-4431-B589-EB6B28EC827E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F43F9754-0924-4B13-B95C-5552C06C7419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F43F9754-0924-4B13-B95C-5552C06C7419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F43F9754-0924-4B13-B95C-5552C06C7419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F43F9754-0924-4B13-B95C-5552C06C7419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2809D53-76DE-4431-B589-EB6B28EC827E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2809D53-76DE-4431-B589-EB6B28EC827E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2809D53-76DE-4431-B589-EB6B28EC827E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2809D53-76DE-4431-B589-EB6B28EC827E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A040DB3-AB1B-4998-A9D6-0963C48A52EA}
+	EndGlobalSection
+EndGlobal
