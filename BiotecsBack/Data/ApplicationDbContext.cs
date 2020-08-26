@@ -22,7 +22,7 @@ namespace BiotecsBack.Data
 
         public DbSet<ProductPhoto> ProductPhotos { get; set; }
 
-        public DbSet<Group> Categories { get; set; }
+        public DbSet<Group> Groups { get; set; }
 
         public DbSet<Article> Articles { get; set; }
 

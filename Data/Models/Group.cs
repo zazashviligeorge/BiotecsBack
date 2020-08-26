@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data.DTOs.FordAdmin;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -27,5 +28,16 @@ namespace Data.Models
         public string GroupNameRu { get; set; }
 
         public  ICollection<Product> Products { get; set; }
+
+        public AdminGroupDto GetDto()
+        {
+            return new AdminGroupDto
+            {
+                Id=Id,
+                GroupName = GroupName,
+                GroupNameEng = GroupNameEng,
+                GroupNameRu = GroupNameRu
+            };
+        }
     }
 }

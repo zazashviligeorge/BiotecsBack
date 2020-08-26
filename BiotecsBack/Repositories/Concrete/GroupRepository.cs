@@ -2,6 +2,7 @@
 using BiotecsBack.Repositories.Abstractions;
 using Data.DTOs.FordAdmin;
 using Data.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,14 +15,14 @@ namespace BiotecsBack.Repositories.Concrete
     {
         public GroupRepository(ApplicationDbContext ctx) : base(ctx) { }
 
-        public Task<AdminGroupDto> GetAllGroups(CancellationToken token)
+        public async Task<IList<AdminGroupDto>> GetAllGroups(CancellationToken token)
         {
-            throw new NotImplementedException();
+            return await RepositoryContext.Groups.Select(c => c.GetDto()).ToListAsync(token);
         }
 
-        public Task<AdminGroupDto> GetByIdForAdminAsync(int groupId, CancellationToken token)
+        public async Task<AdminGroupDto> GetByIdForAdminAsync(int groupId, CancellationToken token)
         {
-            throw new NotImplementedException();
+            return await RepositoryContext.Groups.Where(c => c.Id == groupId).Select(c => c.GetDto()).FirstOrDefaultAsync(token);
         }
     }
 
