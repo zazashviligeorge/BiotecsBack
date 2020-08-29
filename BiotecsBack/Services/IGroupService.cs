@@ -8,7 +8,7 @@ using Data.DTOs.FordAdmin;
 
 namespace BiotecsBack.Services
 {
-    interface IGroupService
+    public interface IGroupService
     {
         Task<AdminGroupDto> GetByIdForAdminAsync(int groupId, CancellationToken token);
 
