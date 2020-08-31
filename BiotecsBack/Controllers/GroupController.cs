@@ -22,11 +22,13 @@ namespace BiotecsBack.Controllers
             _groupService = groupService;
         }
 
+        [HttpGet("ForAdminGetAllGroups")]
         public Task<IList<AdminGroupDto>> GetAllGroups(CancellationToken token)
         {
             return _groupService.GetAllGroups(token);
         }
 
+        [HttpGet("ForAdminGetById/{groupId}")]
         public Task<AdminGroupDto> GetByIdForAdminAsync(int groupId, CancellationToken token)
         {
             return _groupService.GetByIdForAdminAsync(groupId, token);
