@@ -27,5 +27,23 @@ namespace BiotecsBack.Services
         {
             return _groupRepository.GetByIdForAdminAsync(groupId, token);
         }
+
+        public Task DeleteGroup(int id, string currentFolder, CancellationToken token)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task PostGroup(AdminGroupDto groupDto, CancellationToken token)
+        {
+            throw new NotImplementedException();
+        }
+
+        public  async Task PutGroup(int id, AdminGroupDto grouptDto, CancellationToken token)
+        {
+            var existingGroup = await _groupRepository.GetByIdForAdminAsync(id, token);
+
+            throw new NotImplementedException();
+
+        }
     }
 }
